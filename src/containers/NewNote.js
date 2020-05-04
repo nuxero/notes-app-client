@@ -51,7 +51,7 @@ export default class NewNote extends Component {
                 attachment,
                 content: this.state.content
             });
-            //this.props.history.push("/");
+            this.props.history.push("/");
         } catch (e) {
             alert(e);
             this.setState({isLoading: false});

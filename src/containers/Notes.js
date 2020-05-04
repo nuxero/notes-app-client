@@ -90,7 +90,7 @@ export default class Notes extends Component {
                 content: this.state.content,
                 attachment: attachment || this.state.note.attachment
             });
-            this.props.history.push("/");
+            this.setState({isLoading: false});
         } catch (e) {
             alert(e)
             this.setState({isLoading: false});
